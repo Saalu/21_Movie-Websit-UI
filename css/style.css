@@ -149,6 +149,7 @@ body {
 
 .movie-list-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .movie-list-container {
@@ -159,6 +160,8 @@ body {
   display: flex;
   align-items: center;
   height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
 }
 
 .movie-list-main-title {
@@ -187,6 +190,7 @@ body {
   height: 200px;
   object-fit: cover;
   transition: all 1s ease-in-out;
+  border-radius: 20px;
 }
 
 .movie-list-title {
@@ -241,4 +245,8 @@ body {
 }
 .arrow:hover {
   opacity: 1;
+}
+
+.container {
+  background-color: #fff;
 }
